@@ -1,0 +1,74 @@
+@import './base.css';
+
+/* 1. 全局 html/body 設定 */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth; /* 滾動平滑 */
+  background-color: #f8f0e8; /* 全局背景色 */
+  min-height: 100vh;         /* 覆蓋整個視口高度 */
+}
+
+/* 2. #app 容器設定 */
+#app {
+  width: 100%;               /* 滿版寬度 */
+  min-height: 100vh;         /* 滿版高度 */
+  font-weight: normal;
+  box-sizing: border-box;    /* 包含 padding/border 在寬度內 */
+  background-color: #f8f0e8; /* 與 body 一致背景 */
+  /* padding: 2rem; */
+  /* max-width: 1400px;  */ 
+  /* margin: 0 auto;  */
+}
+
+/* 3. home-page 內容區域置中 */
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 內部元素水平置中 */
+}
+
+/* 4. 手機/小螢幕調整 */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem;
+  }
+}
+
+/* 5. 連結樣式 */
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* 6. 之前註解掉的 grid/flex 可視需求再打開 */
+/*
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+*/
+
+
+
+ 

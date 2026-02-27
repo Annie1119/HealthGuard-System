@@ -1,0 +1,23 @@
+<!-- 查看最大寬度 -->
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>取得瀏覽器寬度</title>
+</head>
+<body>
+    <h1>請開啟瀏覽器開發者工具 (F12) 並切換到 Console 標籤查看結果。</h1>
+
+    <script>
+        // 您提供的 JavaScript 程式碼開始
+        const viewportWidthWithScrollbar = window.innerWidth;
+        const viewportWidthWithoutScrollbar = document.documentElement.clientWidth;
+
+        console.log(`包含滾動條的寬度：${viewportWidthWithScrollbar}px`);
+        console.log(`不含滾動條的寬度：${viewportWidthWithoutScrollbar}px`);
+        // 您提供的 JavaScript 程式碼結束
+    </script>
+</body>
+</html>
+
+
